@@ -1,8 +1,8 @@
-@import "~codemirror/lib/codemirror.css";
-@import "~codemirror/addon/fold/foldgutter.css";
-@import "./highlight.css";
-@import "~font-awesome/css/font-awesome.css";
-@import "../fontcustom/fontcustom.css";
+@import '~codemirror/lib/codemirror.css';
+@import '~codemirror/addon/fold/foldgutter.css';
+@import './highlight.css';
+@import '~font-awesome/css/font-awesome.css';
+@import '../fontcustom/fontcustom.css';
 
 html {
   font-size: 14px;
@@ -97,14 +97,14 @@ body {
 
 #Toolbar {
   flex: 0 0 auto;
-  font-family: monospace;
+  font-family: 'Menlo', monospace, consolas;
   line-height: 32px;
   border-bottom: 1px solid #ddd;
   color: #454545;
   padding-left: 10px;
   padding-right: 10px;
   z-index: 200;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -227,7 +227,7 @@ body {
 .errorMessage h3 {
   padding-top: 0;
   margin-top: 0;
-  color: #CC0000;
+  color: #cc0000;
 }
 
 .splitpane-content {
@@ -344,7 +344,7 @@ li.entry {
 .CodeMirror .marked,
 .entry.highlighted {
   border-radius: 2px;
-  background-color: rgba(255,240,6,0.4);
+  background-color: rgba(255, 240, 6, 0.4);
 }
 
 .entry > .value {
@@ -399,6 +399,7 @@ li.entry {
 .CodeMirror {
   height: auto;
   flex: 1;
+  font-family: 'Menlo', monospace !important;
 }
 
 .CodeMirror-scroll {
@@ -411,11 +412,11 @@ li.entry {
 }
 
 .CodeMirror .ErrorGutter {
-  width: .7em;
+  width: 0.7em;
 }
 
 .CodeMirror pre.errorMarker {
-  background-color: #EB949433;
+  background-color: #eb949433;
 }
 
 /* Dialog */
@@ -473,7 +474,6 @@ li.entry {
 #SettingsDialog ul.settings li {
   padding: 3px 0;
 }
-
 
 body .CodeMirror-hints,
 body .CodeMirror-Tern-tooltip {
